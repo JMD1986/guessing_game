@@ -4,9 +4,10 @@ class GuessingGame
     @number_of_guesses = 0
     @guessed_numbers = Array.new
     @winning_number = rand(1..100)
-  end
+    greetings
 
-  def start
+  end
+  def greetings
     puts "
 
       '''''' ;;;;;;;;;;;;;;;;;;;; ''''''
@@ -34,6 +35,9 @@ class GuessingGame
     you have five chances to guess it before I blow up wyoming.
     godspeed."
     puts "\n"
+  end
+  def start
+    greetings
     loop do
       puts "------------------------------------------------------"
       puts "you have used #{@number_of_guesses} out of 5 guesses"
