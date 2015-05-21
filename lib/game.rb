@@ -83,8 +83,9 @@ yMs/-:/oy/  oMMMMMm+.
 `hmhdmNMMs  hMMdo-
   :sdmMMm-./o:`
 
-            you lose.
-     Say goodbye to wyoming.
+        the number was #{@winning_number}
+            you lose
+     say goodbye to wyoming
         "
       end
       break if @number_of_guesses == 5
