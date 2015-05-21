@@ -48,6 +48,7 @@ class GuessingGame
       if @winning_number == player_guess_num
         puts "You have saved wyoming from the bombs of my glorious
         leader. It only took you #{@number_of_guesses} guesses"
+        break
       elsif @guessed_numbers.include?(player_guess_num)
         puts "you already said that number"
       elsif player_guess_num > 100 || player_guess_num < 1
