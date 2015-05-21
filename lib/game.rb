@@ -37,12 +37,13 @@ class GuessingGame
       end
       break if @number_of_guesses == 5
   end
+
 end
   def winning_screen
     puts "Congratulations #{player_name}You have saved wyoming from the bombs of my glorious
         leader. It only took you #{@number_of_guesses} guesses"
-
   end
+
   def lose_screen
     puts "
                                           .+m-
@@ -98,7 +99,7 @@ yMs/-:/oy/  oMMMMMm+.
       '''''' ;;;;;;;;;;;;;;;;;;;; ''''''
 
 
-    Greetings from beautiful North Korea.
+    Greetings I am from the beautiful North Korea.
     I am a program made by glorious leader.
     I am going to choose a number between 1 and 100.
     you have five chances to guess it before I blow up wyoming.
