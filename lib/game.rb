@@ -1,7 +1,7 @@
 class GuessingGame
 
   def initialize
-    @number_of_guesses = 1
+    @number_of_guesses = 0
     @guessed_numbers = Array.new
     @winning_number = rand(1..100)
   end
@@ -46,6 +46,8 @@ class GuessingGame
         leader. It only took you #{@number_of_guesses} guesses"
       elsif @guessed_numbers.include?(player_guess_num)
         puts "you already said that number"
+      elsif player_guess_num > 100 || player_guess_num < 1
+        puts "that's not even in the range..."
       elsif player_guess_num > @winning_number
         puts "wrong guess! you are too high!"
       elsif player_guess_num < @winning_number
